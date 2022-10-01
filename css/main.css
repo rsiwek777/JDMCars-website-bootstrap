@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  background-color: #444;
+}
+
+nav {
+  text-transform: uppercase;
+}
+nav .nav-link:hover {
+  color: #ffb62d;
+}
+nav .fa-solid.fa-bars {
+  padding: 10px;
+}
+nav .navbar-brand {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+nav .navbar-brand:hover {
+  color: #ffb62d;
+}
+nav .navbar-nav .nav-link.active,
+nav .navbar-nav .show > .nav-link {
+  color: #ffb62d;
+}/*# sourceMappingURL=main.css.map */

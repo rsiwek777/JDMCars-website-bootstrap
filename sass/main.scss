@@ -1,0 +1,35 @@
+@import 'colors';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #444;
+}
+nav {
+	text-transform: uppercase;
+
+	.nav-link:hover {
+		color: $orange-color;
+	}
+	.fa-solid.fa-bars {
+		padding: 10px;
+	}
+	.navbar-brand {
+		font-weight: bold;
+		transition: color 0.3s ease;
+		&:hover {
+			color: $orange-color;
+		}
+	}
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show > .nav-link {
+		color: $orange-color;
+	}
+}
