@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 82px;
+}
+
 body {
   position: relative;
   font-family: "Montserrat", sans-serif;
@@ -14,6 +18,18 @@ body {
 
 .shadow-bg {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #ff19fb;
 }
 
 nav {
@@ -25,7 +41,7 @@ nav .nav-link {
   color: #fff;
 }
 nav .nav-link:hover {
-  color: #ffb62d;
+  color: #ff19fb;
 }
 nav .fa-solid.fa-bars {
   padding: 10px;
@@ -34,7 +50,7 @@ nav .fa-solid.fa-bars {
 nav .navbar-brand {
   transition: color 0.3s ease;
   font-weight: bold;
-  color: #ffb62d;
+  color: #ff19fb;
 }
 nav .navbar-brand:hover {
   color: #fff;
@@ -45,7 +61,7 @@ nav .navbar-brand span {
 }
 nav .navbar-nav .nav-link.active,
 nav .navbar-nav .show > .nav-link {
-  color: #ffb62d;
+  color: #ff19fb;
 }
 
 header {
@@ -56,7 +72,7 @@ header h1 {
 }
 header h1 .ghost {
   font-weight: bold;
-  color: #ffb62d;
+  color: #ff19fb;
 }
 header p {
   font-size: 14px;
@@ -99,6 +115,50 @@ header .fa-chevron-down {
   color: #fff;
 }
 
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.aboutus .aboutus-card-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.aboutus .aboutus-card-text {
+  font-size: 14px;
+}
+.aboutus .aboutus-hover {
+  transition: color 0.5s;
+}
+.aboutus .aboutus-hover:hover {
+  color: #ff19fb;
+}
+
+.aboutus-hero {
+  position: relative;
+  background-image: url(/img/img2.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #ddd;
+  z-index: 0;
+}
+.aboutus-hero .aboutus-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -5;
+}
+.aboutus-hero .aboutus-hero-item {
+  margin: 15px 0;
+}
+.aboutus-hero .aboutus-hero-item i {
+  font-size: 36px;
+}
+.aboutus-hero .aboutus-hero-item .aboutus-hero-title {
+  font-style: 24px;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
@@ -118,5 +178,13 @@ header .fa-chevron-down {
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/img1b.jpg");
+  }
+}
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: 72px;
+  }
+  .aboutus-hero {
+    background-image: url(/img/img2b.jpg);
   }
 }/*# sourceMappingURL=main.css.map */

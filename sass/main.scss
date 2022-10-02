@@ -7,6 +7,9 @@
 	margin: 0;
 	padding: 0;
 }
+html {
+	scroll-padding-top: 82px;
+}
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
@@ -14,6 +17,16 @@ body {
 }
 .shadow-bg {
 	background-color: rgba(0, 0, 0, 0.8);
+}
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
 }
 nav {
 	text-transform: uppercase;
@@ -24,7 +37,7 @@ nav {
 		color: $white-color;
 	}
 	.nav-link:hover {
-		color: $orange-color;
+		color: $main-color;
 	}
 	.fa-solid.fa-bars {
 		padding: 10px;
@@ -33,7 +46,7 @@ nav {
 	.navbar-brand {
 		transition: color 0.3s ease;
 		font-weight: bold;
-		color: $orange-color;
+		color: $main-color;
 		&:hover {
 			color: $white-color;
 		}
@@ -44,7 +57,7 @@ nav {
 	}
 	.navbar-nav .nav-link.active,
 	.navbar-nav .show > .nav-link {
-		color: $orange-color;
+		color: $main-color;
 	}
 }
 header {
@@ -53,7 +66,7 @@ header {
 		text-transform: uppercase;
 		.ghost {
 			font-weight: bold;
-			color: $orange-color;
+			color: $main-color;
 		}
 	}
 	p {
@@ -98,6 +111,54 @@ header {
 	}
 }
 
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+	.aboutus-hover {
+		transition: color 0.5s;
+	}
+	.aboutus-hover:hover {
+		color: $main-color;
+	}
+}
+
+.aboutus-hero {
+	position: relative;
+	background-image: url(/img/img2.jpg);
+	background-position: center;
+	background-size: cover;
+	color: $light-gray;
+	z-index: 0;
+
+	.aboutus-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.65);
+		z-index: -5;
+	}
+	.aboutus-hero-item {
+		margin: 15px 0;
+		i {
+			font-size: 36px;
+		}
+
+		.aboutus-hero-title {
+			font-style: 24px;
+		}
+	}
+}
+
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -124,5 +185,13 @@ header {
 		.hero-img {
 			background-image: url('../img/img1b.jpg');
 		}
+	}
+}
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
+	}
+	.aboutus-hero {
+		background-image: url(/img/img2b.jpg);
 	}
 }
