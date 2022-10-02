@@ -14,11 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="/js/script.js" defer async></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
     <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
         <div class="container">
             <a class="navbar-brand" href="#"><i class="fa-solid fa-car"></i> JDM<span>cars</span></a>
@@ -28,7 +28,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#">home</a>
+                    <a class="nav-link" href="#home">home</a>
                     <a class="nav-link" href="#aboutus">o nas</a>
                     <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#prices">ceny</a>
@@ -40,7 +40,7 @@
         </div>
     </nav>
 
-    <header>
+    <header id="home">
         <div class="hero-img">
             <div class="hero-shadow"></div>
             <div class="hero-text">
@@ -117,11 +117,222 @@
                 </div>
             </div>
         </section>
+
+        <section id="portfolio" class="portfolio py-5">
+            <div class="container pb-4">
+                <h2>portfolio</h2>
+                <div class="underline"></div>
+                <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/img3b.jpg" class="d-block w-100" alt="Nissan GTR R34">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nissan GTR R34</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img4b.jpg" class="d-block w-100" alt="Nissan GTR R34">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nissan GTR R34</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img5b.jpg" class="d-block w-100" alt="Nissan GTR R34">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Nissan GTR R34</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="card-group d-flex flex-column d-lg-none">
+                    <div class="card">
+                        <img src="img/img3.jpg" class="card-img-top" alt="Nissan GTR R34">
+                        <div class="card-body">
+                            <h5 class="card-title">Nissan GTR R34</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/img4.jpg" class="card-img-top" alt="Nissan GTR R34">
+                        <div class="card-body">
+                            <h5 class="card-title">Nissan GTR R34</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/img5.jpg" class="card-img-top" alt="Nissan GTR R34">
+                        <div class="card-body">
+                            <h5 class="card-title">Nissan GTR R34</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices" class="prices py-5 bg-light">
+            <h2>prices</h2>
+            <div class="underline"></div>
+            <div class="container text-center">
+                <div class="price-wrap row text-center justify-content-center">
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>Basic</h3>
+                            <hr>
+                            <p>Car washing: <i class="fa-solid fa-check"></i></p>
+                            <p>Replacement of damaged parts: <i class="fa-solid fa-check"></i></p>
+                            <p>Body kit: <i class="fa-solid fa-xmark"></i></p>
+                            <p>Power increase: <i class="fa-solid fa-xmark"></i></p>
+                            <p class="price-tag">450$</p>
+                            <button type="button" class="btn btn-secondary">Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>Professional</h3>
+                            <hr>
+                            <p>Car washing: <i class="fa-solid fa-check"></i></p>
+                            <p>Replacement of damaged parts: <i class="fa-solid fa-check"></i></p>
+                            <p>Body kit: <i class="fa-solid fa-check"></i></p>
+                            <p>Power increase: <i class="fa-solid fa-xmark"></i></p>
+                            <p class="price-tag">850$</p>
+                            <button type="button" class="btn btn-primary">Buy</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4">
+                        <div class="price-box">
+                            <h3>Premium</h3>
+                            <hr>
+                            <p>Car washing: <i class="fa-solid fa-check"></i></p>
+                            <p>Replacement of damaged parts: <i class="fa-solid fa-check"></i></p>
+                            <p>Body kit: <i class="fa-solid fa-check"></i></p>
+                            <p>Power increase: <i class="fa-solid fa-check"></i></p>
+                            <p class="price-tag">1250$</p>
+                            <button type="button" class="btn btn-secondary">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="price-info pt-5">Take advantage of one of the three main packages or <a
+                        href="#contact">contact us</a> and set the terms
+                    individually.</p>
+                <p class="text-muted">Each package additionally includes car diagnostics.</p>
+            </div>
+        </section>
+
+        <section id="team" class="team py-5">
+            <div class="team-shadow"></div>
+            <h2>team</h2>
+            <div class="underline"></div>
+            <div class="container">
+                <div class="card-group team-carousel">
+                    <div class="card mx-3">
+                        <img src="img/team/team1.jpg" class="card-img-top" alt="team2">
+                        <div class="card-body">
+                            <h5 class="card-title">Head mechanic</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="img/team/team2.jpeg" class="card-img-top" alt="team2">
+                        <div class="card-body">
+                            <h5 class="card-title">Second mechanic</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="img/team/team3.jpg" class="card-img-top" alt="team3">
+                        <div class="card-body">
+                            <h5 class="card-title">Vulcanizer</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="img/team/team4.jpg" class="card-img-top" alt="team2">
+                        <div class="card-body">
+                            <h5 class="card-title">auto detailer</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="card mx-3">
+                        <img src="img/team/team5.jpg" class="card-img-top" alt="team2">
+                        <div class="card-body">
+                            <h5 class="card-title">Head designer</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+    <script src="/js/slicksettings.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
