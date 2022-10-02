@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'animate';
 
 *,
 *::before,
@@ -123,9 +124,6 @@ header {
 	.aboutus-card-text {
 		font-size: 14px;
 	}
-	.aboutus-hover {
-		transition: color 0.5s;
-	}
 	.aboutus-hover:hover {
 		color: $main-color;
 	}
@@ -234,7 +232,6 @@ header {
 		img {
 			height: 300px;
 			object-fit: cover;
-			object-fit: fill;
 		}
 		i {
 			padding: 10px;
@@ -253,6 +250,71 @@ header {
 	}
 	.card-footer {
 		margin-top: 50px;
+	}
+}
+.achievments-list {
+	i {
+		padding: 10px;
+		font-size: 48px;
+		color: $white-color;
+		text-shadow: 0 0 5px #000;
+	}
+	.achievments-list {
+		padding: 20px 0;
+	}
+	.achievment-number {
+		font-size: 22px;
+	}
+	.achievment-text {
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+}
+.contact {
+	position: relative;
+	background-image: url(/img/img7b.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+	h2 {
+		color: $light-gray;
+		font-weight: bold;
+	}
+	.underline {
+		background-color: $light-gray;
+	}
+
+	.contact-shadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 19, 57, 0.8);
+		z-index: -5;
+	}
+	.contact-us {
+		color: $white-color;
+		display: flex;
+		align-items: center;
+	}
+	.contact-item {
+		margin: 30px 0;
+		h3 {
+			margin-bottom: 15px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+		.social-media {
+			font-size: 26px;
+			a{
+				padding: 10px;
+				color: $white-color;
+			}
+			a:hover {
+				color: $light-gray;
+			}
+		}
 	}
 }
 
@@ -293,5 +355,8 @@ header {
 	}
 	.aboutus-hero {
 		background-image: url(/img/img2b.jpg);
+	}
+	.team {
+		background-image: url('../img/img6b.jpg');
 	}
 }
