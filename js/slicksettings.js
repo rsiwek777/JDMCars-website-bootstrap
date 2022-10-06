@@ -1,24 +1,22 @@
-$(document).ready(function () {
-	$('.team-carousel').slick({
-		infinite: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: true,
-		mobileFirst: true,
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-				},
+$('.team-carousel').slick({
+	infinite: true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	autoplay: true,
+	mobileFirst: true,
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
 			},
-			{
-				breakpoint: 992,
-				settings: {
-					slidesToShow: 3,
-				},
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 3,
 			},
-		],
-	})
+		},
+	],
 })
